@@ -1,0 +1,15 @@
+version: '2'
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: qos
+      MYSQL_DATABASE: QOSenergy
+      MYSQL_USER: user
+      MYSQL_PASSWORD: qos
+    ports:
+      - 3306:3306
+  adminer:
+    image: adminer
+    ports:
+        - 8080:8080
